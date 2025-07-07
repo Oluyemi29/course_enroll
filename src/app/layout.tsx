@@ -19,7 +19,24 @@ export const metadata: Metadata = {
     default: "Student Course Portal",
     template: "%s | Student Course Portal",
   },
-  description: "Simple Student Course Portal web app",
+
+  metadataBase: new URL("https://course-enroll-8p3p.vercel.app"),
+  description:
+    "A full-stack student course management web app built with Next.js and Express.js. It allows students to enroll in courses and admins to manage course listings and student enrollments. Designed with Tailwind CSS and powered by MySQL for real-time data handling.",
+  openGraph: {
+    title: "Student Course Portal",
+    description:
+      "A full-stack student course management web app built with Next.js and Express.js. It allows students to enroll in courses and admins to manage course listings and student enrollments. Designed with Tailwind CSS and powered by MySQL for real-time data handling.",
+    url: "https://course-enroll-8p3p.vercel.app",
+    siteName: "Student Course Portal",
+    images: {
+      url: "/tempcourse.PNG",
+      width: 1200,
+      height: 630,
+      alt: "Student Course Portal",
+    },
+    type: "website",
+  },
 };
 
 export default function RootLayout({
