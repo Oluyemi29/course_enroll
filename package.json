@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "node script/data.js"
+    "seed": "node script/data.js",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@heroui/react": "^2.8.0-beta.11",
