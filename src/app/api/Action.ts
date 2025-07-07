@@ -251,9 +251,9 @@ export const UserEnrollCourse = async ({
         message: "All field are required",
       };
     }
-    const existEnroll = await prisma.enroll.findUnique({
+    const existEnroll = await prisma.enroll.findFirst({
       where: {
-        id: courseId,
+        courseId: courseId,
         userId,
       },
     });
